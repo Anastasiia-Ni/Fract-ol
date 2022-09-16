@@ -14,9 +14,9 @@ NAME = fractol
 
 CC = gcc
 
-LIST =	fractol.c	ft_check_input.c 	ft_color.c\
-		ft_free.c	ft_math_part.c		ft_events.c\
-		ft_screen.c ft_window.c
+LIST =	sources/fractol.c	sources/ft_check_input.c 	sources/ft_color.c\
+		sources/ft_free.c	sources/ft_math_part.c		sources/ft_events.c\
+		sources/ft_screen.c sources/ft_window.c
 
 OBJ = $(LIST:.c=.o)
 
@@ -30,7 +30,7 @@ $(NAME) :	$(OBJ)
 			$(CC) $(LIST) $(CFLAGS) $(OBJS) -L ./mlx -l mlx -framework OpenGL -Ofast -framework AppKit -L ./libft -l ft -lm -o $(NAME)
 
 %.o : %.c
-	$(CC) -Wall -Wextra -Werror -Imlx -c $< -o $@
+	$(CC) $(CFLAGS) -Imlx -c $< -o $@
 
 bonus : $(NAME)
 
