@@ -21,7 +21,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include "../mlx/mlx.h"
-# include "../libft/libft.h"
+# include "../lib-ft/libft.h"
 
 typedef struct s_img
 {

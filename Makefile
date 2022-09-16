@@ -25,9 +25,9 @@ CFLAGS = -Wall -Wextra -Werror
 all : $(NAME)
 
 $(NAME) :	$(OBJ)
-			$(MAKE) -C ./libft
+			$(MAKE) -C ./lib-ft
 			$(MAKE) -C ./mlx
-			$(CC) $(LIST) $(CFLAGS) $(OBJS) -L ./mlx -l mlx -framework OpenGL -Ofast -framework AppKit -L ./libft -l ft -lm -o $(NAME)
+			$(CC) $(LIST) $(CFLAGS) $(OBJS) -L ./mlx -l mlx -framework OpenGL -Ofast -framework AppKit -L ./lib-ft -l ft -lm -o $(NAME)
 
 %.o : %.c
 	$(CC) $(CFLAGS) -Imlx -c $< -o $@
@@ -37,8 +37,8 @@ bonus : $(NAME)
 clean:
 	rm -rf $(OBJ)
 	rm -f ./mlx/*.a
-	rm -f ./libft/*.o
-	rm -f ./libft/*.a
+	rm -f ./lib-ft/*.o
+	rm -f ./lib-ft/*.a
 
 fclean: clean
 	rm -rf $(NAME)
