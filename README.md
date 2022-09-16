@@ -13,8 +13,8 @@ This project is about creating a small fractal exploration program.
 ## Installation:
 Clone repository and compile with make
 ```
-$ git clone
-
+$ git clone git@github.com:Anastasiia-Ni/Fract-ol.git
+$ cd Fract-ol
 $ make
 ```
 
