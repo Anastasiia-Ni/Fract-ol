@@ -1,9 +1,10 @@
 # Fract-ol
 
 ## About project: 
-This project is about creating a small fractal exploration program using a graphics miniLibx library in C.
 
-A fractal is an abstract mathematical object, like a curve or a surface, which has a similar pattern whatever the scale.
+In mathematics, a fractal is a geometric shape containing detailed structure at arbitrarily small scales, usually having a fractal dimension strictly exceeding the topological dimension.
+
+This project is about creating a small fractal exploration program using a graphics miniLibx library in C.
  
 The project gives the opportunity to make use of the mathematical notion of complex numbers and to take a peek at the concept of optimization in computer graphics.
 
